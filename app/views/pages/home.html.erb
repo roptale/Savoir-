@@ -1,2 +1,10 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="homepage-container">
+  <div class="hero">
+    <%= image_tag 'white_on_trans.png', alt: 'Savoir+ Logo', class: 'hero-logo' %>
+    <p class="hero-description">Together, we're smarter! Share your specific knowledge, explore a variety of posts and join the discussion.</p>
+    <h2>Our mission</h2>
+    <p class="hero-description">Our mission is to connect smart people who are passionate about their particular field. No matter what your area of expertise: whether you're a professional or an individual, you've got something to teach us!</p>
+
+    <%= link_to "View all posts", posts_path, class: "btn btn-primary hero-btn" %>
+  </div>
+</div>

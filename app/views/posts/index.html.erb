@@ -1,0 +1,12 @@
+<div class="posts-container">
+  <%= link_to "Home", root_path, class: "btn btn-secondary back-home-btn" %>
+
+  <% @posts.each do |post| %>
+    <div class="post-card">
+      <h3 class="post-title a"><%= link_to post.title, post_path(post) %></h3>
+      <p class="post-content"><%= truncate(post.content, length: 150) %></p>
+      <%= link_to "Read more", post_path(post), class: "btn btn-primary read-more-btn" %>
+    </div>
+  <% end %>
+
+</div>
