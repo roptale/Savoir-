@@ -1,0 +1,24 @@
+<div class="article-container"><h1 class="post-title"><%= @post.title %></h1>
+<p class="post-content"><%= @post.content %></p>
+<p><%= link_to "Back to All Posts", posts_path, class: "btn btn-secondary back-to-all-posts-btn" %></p>
+
+<h2 class="comments-header">Comments</h2>
+<div class="comments-container">
+  <% @comments.each do |comment| %>
+    <div class="comment-card">
+      <strong class="comment-user"><%= comment.user.nickname %>:</strong>
+      <p class="comment-content"><%= comment.content %></p>
+    </div>
+  <% end %>
+</div>
+
+<h3 class="add-comment-title">Add a Comment</h3>
+<%= simple_form_for([@post, @comment]) do |f| %>
+  <div class="form-group">
+    <%= f.input :content, as: :text, label: "Your Comment", input_html: { rows: 5 }, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.submit "Submit Comment", class: "btn btn-primary submit-comment-btn" %>
+  </div>
+<% end %>
+</div>
