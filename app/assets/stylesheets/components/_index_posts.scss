@@ -11,14 +11,18 @@
   padding: 2rem;
 
   .post-title a {
+    align-self: start;
     font-size: 1.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     color: var(--primary);
     text-decoration: none;
     font-weight: bold;
   }
 
   .post-card {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
     background-color: var(--background);
     color: var(--text);
     border-radius: 15px;
@@ -38,8 +42,9 @@
       font-size: 1rem;
       color: var(--text);
       margin-bottom: 15px;
+      text-align: start;
     }
-
+  }
     .read-more-btn {
       background-color: var(--secondary);
       color: #fff;
@@ -48,12 +53,13 @@
       font-size: 1rem;
       text-decoration: none;
       border: none;
+      align-self: center;
 
       &:hover {
         background-color: var(--accent);
       }
     }
-  }
+
 
   .back-home-btn {
     align-self: flex-start;
@@ -65,12 +71,10 @@
     font-size: 1.1rem;
     margin-top: 10px;
     margin-bottom: 20px;
-    // position: absolute;
     top: 50px;
     left: 10px;
     z-index: 10;
     border: none;
-    // margin-right: 250px;
 
     &:hover {
       background-color: var(--secondary);

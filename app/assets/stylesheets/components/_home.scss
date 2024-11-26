@@ -7,6 +7,7 @@
   background-color: var(--background);
   padding: 40px;
   text-align: center;
+
 }
 
 .hero {
@@ -18,6 +19,14 @@
   margin: 0 auto;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-hero {
+  padding: 10px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: var(--text);
+  border-radius: 15px;
+  padding: 30px;
 }
 
 .hero-title {
@@ -49,8 +58,7 @@
 }
 
 .hero-logo {
-  max-width: 200px;
-  height: auto;
+  max-width: 150px;
   padding: 15px;
 }
 
